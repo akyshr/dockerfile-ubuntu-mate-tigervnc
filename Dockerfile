@@ -44,7 +44,7 @@ RUN apt-get install -y scim-anthy
 
 # Copy the files into the container
 ADD . /src
-RUN rm /src/*~
+RUN rm /src/*~ ; true
 
 # install tigervnc
 RUN dpkg -i /src/packages/*.deb
