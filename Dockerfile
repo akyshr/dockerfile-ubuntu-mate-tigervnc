@@ -1,4 +1,4 @@
-# tigervnc-lxde desktop
+# tigervnc-mate desktop
 #
 
 FROM  ubuntu:14.04
