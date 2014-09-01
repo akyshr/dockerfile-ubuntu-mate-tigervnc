@@ -2,15 +2,16 @@ Ubuntu MATE Desktop with tigervnc and xdm
 =================================================
 
 ###Usage 
-````bash
-docker run -d -p 5900:5900 akyshr/ubuntu-mate-tigervnc
+````
+docker run -d -p 5901:5901 akyshr/ubuntu-mate-tigervnc
 ````
 
 ###Account
 ````
- USER : ubuntu
- PASSWD : ubuntu
+ USER : admin
+ PASSWD : admin
 ````
 ###Change Language 
-
- docker run -d -p 5900:5900 -e "LANG=ja_JP.UTF-8" -e "TZ=JST-9" akyshr/ubuntu-mate-tigervnc
+````
+ docker run -d -p 5901:5901 -e "LANG=ja_JP.UTF-8" -e "TIMEZONE=Asia/Tokyo" akyshr/ubuntu-mate-tigervnc
+````

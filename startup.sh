@@ -1,7 +1,7 @@
 #!/bin/bash
 
-USER=${USER:-ubuntu}
-PASSWORD=${PASSWORD:-ubuntu}
+USER=${USER:-admin}
+PASSWORD=${PASSWORD:-admin}
 LANG=${LANG:-en_US.UTF-8}
 TIMEZONE=${TIMEZONE:-Etc/UTC}
 
@@ -22,6 +22,8 @@ if [ -f /var/run/xdm.pid ] ; then
   rm /var/run/xdm.pid
 fi
 /usr/bin/xdm
+
+service xinetd start
 
 # Start the ssh service
 /usr/sbin/sshd -D
